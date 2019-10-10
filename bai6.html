@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So nguyen</title>
+</head>
+<body>
+<script>
+   let n = prompt("Nhap so phan tu");
+   let s = [];
+   for (i=0;i<n;i++){
+       let arr = Number(prompt("Nhap thu tu phan tu"+i));
+       s.push(arr);
+   }
+   let baber = prompt("Nhap v");
+   let check = false;
+   for (i=0;i<n;i++){
+       if (baber==s[i]){
+           alert(baber+ " co trong mang tai vi tri thu " + i);
+           check = true;
+           break;
+       }
+   }
+   if (!check){
+       alert(baber + " khong co trong mang");
+   }
+</script>
+</body>
+</html>

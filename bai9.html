@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhap so phan tu cua mang a" );
+    let ab = [];
+    for (i=0;i<a;i++) {
+        let arr = Number(prompt("Phan tu thu cua mang a "));
+        ab.push(arr);
+    }
+    let b = prompt("Nhap so phan tu cua mang b" );
+    let ba = [];
+    for (j=0;j<b;j++) {
+        let add = Number(prompt("Phan tu thu cua mang b"));
+        ba.push(add);
+    }
+    let c = document.write("Mang C "+ ab.concat(ba));
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Long</title>
+</head>
+<form>
+   Giá trị lớn nhất là
+</form>
+<span id="baby"></span>
+<body>
+<script>
+    let lovely = ['1','2','14','1001','19','312'];
+    document.getElementById("baby").innerHTML = myArrayMax(lovely);
+    function myArrayMax(arr) {
+        return Math.max.apply(null, arr);
+
+    }
+</script>
+</body>
+</html>

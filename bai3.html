@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Long</title>
+</head>
+<span id="happy"></span>
+<body>
+<script>
+    let said = [56,112,56,168,56,224,56];
+    document.getElementById("happy").innerHTML=myArrayMax(said)
+    function myArrayMax(arr) {
+        return Math.max.apply(null, arr);
+    }
+    sum = 0;
+    for (i=0;i<said.length;i++){
+        sum = sum +said[i];
+    }
+    ave = sum/said.length;
+    alert(ave);
+</script>
+</body>
+</html>

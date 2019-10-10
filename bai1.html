@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Long</title>
+</head>
+<body>
+<script>
+    let dragon = prompt("Nhap so luong phan tu");
+    let replace = [];
+    for (i=0;i<dragon;i++){
+        let add = Number(prompt("Nhap thu tu phan tu"+i));
+        replace.push(add);
+    }
+    let baby = [];
+    for (i=0;i<replace.length;i++){
+        if (replace[i]>=10){
+            baby.push(replace[i]);
+        }
+    }
+    alert(baby.toString());
+</script>
+</body>
+</html>

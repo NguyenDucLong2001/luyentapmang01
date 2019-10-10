@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Long</title>
+</head>
+<body>
+<form>
+    Cac so nguyen to trong mang
+    <input type="text" id = "Tom"/>
+    <p>
+        <button onclick="dog()">Hien thi</button>
+    </p>
+</form>
+<script>
+    let said = [1,0,2,1423,5,7,11,14,52,523,532,4124];
+    function kt(n) {
+        let l;
+        if (n<2){
+            return 0;
+        }
+        if (n<=3){
+            return 1;
+        }
+        for (l=2;l<n;l++){
+            if(n%l == 0){
+                return 0;
+            }
+        }
+        return 1;
+    }
+    function dog() {
+        let dem =0;
+        let i =2;
+        d = Number(document.getElementById("Tom").value);
+        for (dem; dem < said.length;dem++){
+            if (kt(said[dem])){
+                document.write(said[dem]+" ");
+            }
+        }
+    }
+</script>
+</body>
+</html>

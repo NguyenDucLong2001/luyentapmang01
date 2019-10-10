@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Long</title>
+</head>
+<body>
+<script>
+    let k = prompt("nhap so phan tu");
+    let t = [];
+    for (i=0;i<k;i++){
+        let arr = Number(prompt("Nhap thu tu phan tu"+i));
+        t.push(arr);
+    }
+    t.sort(function (a,b) {
+        return b -a;
+    })
+    document.write("Thu tu giam dan " + t);
+</script>
+</body>
+</html>

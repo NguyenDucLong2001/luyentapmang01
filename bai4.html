@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Long</title>
+</head>
+<body>
+<script>
+    let x = prompt("Nhập số");
+    let s = [];
+for (i=0;i<x;i++){
+    let verySaid = Number(prompt("Nhap phan tu thu"+i));
+    s.push(verySaid);
+}
+for (i=0;i<Math.floor(x/2);i++){
+    let cute = s[i];
+    s[i] = s[x-i-1];
+    s[x-i-1]= cute
+}
+    alert(s);
+</script>
+</body>
+</html>
